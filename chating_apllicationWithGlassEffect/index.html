@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParshuTak Chating</title>
+    <!-- ====================== SOCKET CONNECTION FORM NODE SERVER =================== -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <!-- ============== CSS LINK =============== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ============== FONT CDN ============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <audio id="audio">
+        <source src="assets/audio/massages_audio.mp3">
+    </audio>
+    <main>
+        <section class="glass">
+            <div class="dashboard">
+                <div class="profile" id="profile">
+                    <img src="assets/image/profile_img.png" alt="">
+                    <h1 class="title"></h1>
+                </div>
+                <div class="menu">
+                    <h1 class="title">updated</h1>
+                    <p class="subtitle">follow for more update and upgrade in project</p>
+                  <ul class="link-items">
+                      <li class="link">  <a href="https://github.com/DSDarkMark"><i class="fab fa-github"></i>github</a>
+                      </li>
+                      <li class="link">  <a href=" https://www.fiverr.com/dsmark_"><i class="fab fab fa-foursquare"></i>fiverr</a>
+                      </li>
+                      <li class="link">  <a href=""><i class="fab fab fa-discord"></i>discord</a>
+                      </li>
+                  </ul>
+                </div>
+                <div class="author">
+                    <img src="assets/image/dsmark.jpg" alt="">
+                    <h2 class="title">DSmark</h2>
+                    <p class="subtitle">created by.</p>
+                </div>
+            </div>
+            <div class="chating_section">
+               <div class="title_section">
+                <img src="assets/image/news.jpg" alt="">
+                <h1 class="title">ParshuTak</h1>
+                <p class="subtitle">do Ultimate chating always</p>
+               </div>
+               <!-- ================= CHATING SHOWING SEE BALOW DOWN =================== -->
+                <div class="massage_section" id="massage_section">
+                    <div class="userMassages"id="userMassages">*this is a note by DSmark: "place user desktop view◖⚆ᴥ⚆◗"</div>
+                </div>
+                <div class="control_section" id="control_section">  
+                    <input type="text" >
+                  <button class="button" type="submit"><a href="" herf="#">send</a></button></div>
+              </div>
+        </section>
+        <div class="bg-circle"></div>
+        <div class="bg-circle" style="--i:2"></div>
+        <div class="bg-circle" style="--i:3"></div>
+    </main>
+</body>
+</html>

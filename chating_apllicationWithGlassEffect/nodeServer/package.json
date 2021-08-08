@@ -1,0 +1,14 @@
+{
+  "name": "chat_application",
+  "version": "1.0.0",
+  "description": "chating aplication for testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DSmark",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.1.3"
+  }
+}
