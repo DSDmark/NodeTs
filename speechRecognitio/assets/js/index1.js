@@ -28,14 +28,14 @@ const wordList = [              // ARRAY IN ARRAY
 // MESSAGES THE USER DO INPUT 
 const userMess = [
  [
-  'hello I am DS',
+  'hello',
 
  ],
  [
-  'who is adrash',
+  'what is my name',
  ],
  [
-  'what is phone number of adrash',
+  'what is phone number of sanskar',
  ],
 ];
 
@@ -58,11 +58,11 @@ voicebtn.addEventListener('click', () => {
 });
 
 function readOutLoud(mess) {
- // console.log(mess);
+ console.log(mess);
  const speech = new SpeechSynthesisUtterance();
  speech.text = '';
  speech.lang = 'hi-IN';
- // speech.lang = 'en-US';
+ speech.lang = 'en-US';
  speech.volume = 1;
  speech.rate = 1;
  speech.pitch = 1;
@@ -75,10 +75,10 @@ function readOutLoud(mess) {
    outputData.textContent = finalText;
    speech.text = finalText;
   }
-  //  else {
-  //     // DEFAULT MESSAGE 
-  //   speech.text = "sorry some error is came";
-  // }
+   else {
+      // DEFAULT MESSAGE 
+    speech.text = "sorry some error is came";
+  }
  }
  window.speechSynthesis.speak(speech);
 };
