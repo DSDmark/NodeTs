@@ -108,5 +108,10 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*.ts", // Include TypeScript source files
+    ".eslintrc.cjs", // Include ESLint configuration file
+    "build/**/*.js" // Include build output files
+  ],
+  "exclude": ["node_modules"]
 }
