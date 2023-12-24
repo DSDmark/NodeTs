@@ -1,1 +1,5 @@
-console.log('hello husky!')
+const { log } = console
+
+
+const name = "sdf"
+log('he')

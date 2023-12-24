@@ -1,12 +1,11 @@
 {
   "name": "preconfigNodets",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "start": "pnpm run build && node ./build/index.js",
-    "dev": "pnpm nodemon ./src/index.ts",
+    "dev": "pnpm nodemon",
     "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format:check": "pnpm prettier --check .",
@@ -19,34 +18,33 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.2",
-    "@typescript-eslint@latest": "link:eslint-plugin-prettier/@typescript-eslint@latest",
     "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard-with-typescript": "^42.0.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.2",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.2"
   },
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
   "husky": {
-    "hooks": {
+    "hook": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,ts,json,css,md}": [
-      "pnpm format:check",
-      "git add"
+    "*.ts": [
+      "npm run format:fix",
+      "npm run lint:fix",
+      "git add ."
     ]
   }
 }

@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "prettier"
+  ],
+  "plugins": [
+    "eslint-plugin-node",
+    "eslint-plugin-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ],
+    "multiline-ternary": "off",
+    "indent": "off"
+  }
+}
