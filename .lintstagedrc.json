@@ -1,0 +1,7 @@
+{
+  "*.ts": [
+    "npm run format:write",
+    "npm run lint:fix",
+    "echo 'fine work!'",
+  ]
+}
