@@ -3,14 +3,8 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "standard-with-typescript",
-    "prettier"
-  ],
-  "plugins": [
-    "eslint-plugin-node",
-    "eslint-plugin-prettier"
-  ],
+  "extends": ["standard-with-typescript", "prettier"],
+  "plugins": ["eslint-plugin-node", "eslint-plugin-prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -24,14 +18,8 @@
         "avoidEscape": true
       }
     ],
-    "semi": [
-      2,
-      "never"
-    ],
-    "comma-dangle": [
-      "error",
-      "only-multiline"
-    ],
+    "semi": [2, "never"],
+    "comma-dangle": ["error", "only-multiline"],
     "space-before-function-paren": [
       "error",
       {
