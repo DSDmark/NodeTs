@@ -1,3 +1,3 @@
 const { log } = console
 
-log('fine')
+log("fine")
