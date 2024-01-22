@@ -1,3 +1,4 @@
 const { log } = console
 
-log('fine')
+const re = 'hey'
+log(re.repeat(3))
