@@ -1,6 +1,0 @@
-module.exports = {
-  watch: ["src"],
-  ext: ".ts",
-  gignore: [],
-  exec: "pnpm ts-node ./src/index.ts"
-}
